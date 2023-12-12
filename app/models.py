@@ -11,6 +11,6 @@ class User(Base):
 class Profile(Base):
     __tablename__ = "profiles"
     profile_id = Column(Integer, primary_key=True, nullable=False, index=True, autoincrement=True)
-    user_id = Column(Integer, ForeignKey("users.user_id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.user_id", ondelete="CASCADE"))
     name = Column(String, nullable=False)
     description = Column(String, nullable=False)
