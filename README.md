@@ -33,3 +33,35 @@ Working FastAPI API with a User and Profile models and schemas.
 - Implement proper folder structure
 - Validation must be done using Pydantic
 - Use multiple commits (when possible, use conventional commit messages)
+
+
+## Setup and Installation
+
+### 1. Installing the Dependencies
+
+1. Install the project dependencies:
+
+pip install -r requirements.txt
+
+
+### 2. Running the Application
+
+1. Start the Uvicorn server with the following command:
+
+***First you must create a postgres database in localhost***
+
+uvicorn main.app:app --reload
+
+
+2. Access the application in your web browser at http://localhost:XXXX.
+
+### 3. Testing
+
+1. Run the tests with the following command:
+
+pytest
+
+
+### 5. Additional Notes
+
+* Make sure you have the environment variables set for any required configuration.
